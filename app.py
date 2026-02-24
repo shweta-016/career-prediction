@@ -7,7 +7,9 @@ import pandas as pd
 
 encoder = pickle.load(open("encoder.pkl", "rb"))
 scaler = pickle.load(open("scaler.pkl", "rb"))
-model_rfc = pickle.load(open("model_rfc.pkl", "rb"))
+# model_rfc = pickle.load(open("model_rfc.pkl", "rb"))
+import joblib
+model_rfc = joblib.load("model_rfc.pkl")
 
 # Career map
 career_aspiration_map = {
